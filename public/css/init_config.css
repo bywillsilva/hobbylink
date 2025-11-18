@@ -1,0 +1,8 @@
+.content {
+    padding: 50px;
+
+    & svg {
+        color: var(--blue);
+        width: var(--large_image);
+    }
+}

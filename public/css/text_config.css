@@ -1,0 +1,19 @@
+.text-white {
+    color: var(--text_white);
+}
+
+.text-sm {
+    font-size: .8em;
+}
+
+.text-3x1 {
+    font-size: 2em;
+}
+
+.text-2x1 {
+    font-size: 1.2em;
+}
+
+.text-center {
+    text-align: center;
+}

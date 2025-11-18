@@ -1,0 +1,36 @@
+.content {
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box;
+
+    & .hobbies {
+        flex-wrap: wrap;
+
+        & .hobby-card {
+            border: 1px solid var(--white_dark);
+            border-radius: 10px;
+            padding: 20px;
+
+            flex: 1 65px;
+
+            & svg {
+                height: var(--mid_image);
+            }
+        }
+
+        & .hobby-card:hover {
+            cursor: pointer;
+            background-color: var(--white_dark);
+        }
+    }
+}   
+
+@media (min-width: 450px) {
+    .content {
+        & .hobbies {
+            & .hobby-card {
+                flex: 1 500px !important;
+            }
+        }
+    }
+}

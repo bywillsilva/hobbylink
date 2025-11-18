@@ -1,0 +1,35 @@
+.btn-blue {
+    background-color: var(--blue);
+    color: var(--text_white);
+
+    border: none;
+    border-radius: 10px;
+    
+    padding: 10px;
+    max-width: 200px;
+    width: 100%;
+    transition: ease-in-out 0.3s;
+}
+
+.btn-blue:hover {
+    background-color: var(--blue_dark);
+    cursor: pointer;
+}
+
+.btn-white {
+    background-color: var(--white);
+    color: var(--text_color);
+
+    border: 1px solid var(--white_dark);
+    border-radius: 10px;
+    
+    padding: 10px;
+    max-width: 200px;
+    width: 100%;
+    transition: ease-in-out 0.3s;
+}
+
+.btn-white:hover {
+    background-color: var(--white_dark);
+    cursor: pointer;
+}
