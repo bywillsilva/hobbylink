@@ -1,0 +1,42 @@
+.content {
+    width: 100%;
+    padding: 50px;
+
+    & .comments {
+        flex-wrap: wrap;
+        width: 100%;
+
+
+        & .comment-card {
+            flex: 1 500px;
+            max-width: 500px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    }
+
+    & .add-comment {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        padding: 20px 50px;
+        border-top: 1px solid var(--white_dark);
+        background-color: var(--backgounrd_color);
+
+        & input {
+            flex: 1;
+            max-width: none;
+            border-radius: 20px;
+        }
+
+        & button {
+            width: fit-content;
+            border-radius: 25px;
+
+            & svg {
+                width: 20px;
+            }
+        }
+    }
+}

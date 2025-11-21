@@ -1,7 +1,6 @@
 .content {
     padding: 50px;
     width: 100%;
-    box-sizing: border-box;
 
     & .hobbies {
         flex-wrap: wrap;

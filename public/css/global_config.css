@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -8,10 +9,18 @@ body {
     background: var(--backgounrd_color);
     color: var(--text_color);
 }
+
+header {
+    position: relative;
+    top: 0;
+    padding: 50px 50px 0 50px;
+    width: 100%;
+}
  
 .background {
   position: absolute;
   display: block;
+  height: 100% !important;
   top: 0;
   left: 0;
   z-index: -2;
@@ -41,10 +50,13 @@ body {
     flex-direction: row;
 }
 
+.gap-1 {
+    gap: 10px;
+}
+
 .gap-2 {
     gap: 20px;
 }
-
 
 .gap-5 {
     gap: 50px;
@@ -64,6 +76,15 @@ body {
 
 .space-between {
     justify-content: space-between;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .full-height {

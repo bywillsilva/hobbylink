@@ -14,16 +14,15 @@
     <canvas class="background"></canvas>
 
     <body class="flex-column centerX full-height">
+        <header class="flex-row space-between centerY centerX">
+            <h1 class="text-2x1">HobbyLink</h1>
+            <p class="text-sm" onclick="`${window.history.back()}`" style="cursor: pointer;">Voltar</p>
+        </header>
         <div class="content flex-column gap-5 full-height">
-            <header class="flex-row space-between centerY">
-                <h1 class="text-2x1">HobbyLink</h1>
-                <p class="text-sm" onclick="`${window.history.back()}`" style="cursor: pointer;">Voltar</p>
-            </header>
-
-            <h2 class="text-3x1">Selecione seus hobbies</h2>
-
+            <h2 class="text-3x1">Selecione seu hobbie</h2>
+            <input id="searchHobby" type="text" placeholder="Pesquisar comunidade..." class="search-input" />
             <section class="hobbies flex-row centerX gap-2">
-                <div class="hobby-card flex-column centerX centerY">
+                <div class="hobby-card flex-column centerX centerY" data-hobby="music">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
                         fill="#2b7ce8"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                         <path
@@ -32,7 +31,7 @@
                     <span>Musica</span>
                 </div>
 
-                <div class="hobby-card flex-column centerX centerY">
+                <div class="hobby-card flex-column centerX centerY" data-hobby="reading">
                     <svg xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                         <path
@@ -41,7 +40,7 @@
                     <span>Leitura</span>
                 </div>
 
-                <div class="hobby-card flex-column centerX centerY">
+                <div class="hobby-card flex-column centerX centerY" data-hobby="sports">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
                         fill="#07b984"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                         <path
@@ -50,7 +49,7 @@
                     <span>Esportes</span>
                 </div>
 
-                <div class="hobby-card flex-column centerX centerY">
+                <div class="hobby-card flex-column centerX centerY" data-hobby="cooking">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
                         fill="#f47011"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                         <path
@@ -62,6 +61,7 @@
         </div>
     </body>
     <script src="/scripts" defer></script>
+    <script src="/hobby_community_script"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" defer></script>
     <script defer>
         window.onload = function () {
@@ -74,5 +74,6 @@
             });
         };
     </script>
+
 
 </html>

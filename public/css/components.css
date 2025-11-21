@@ -4,7 +4,7 @@
 
     border: none;
     border-radius: 10px;
-    
+
     padding: 10px;
     max-width: 200px;
     width: 100%;
@@ -22,7 +22,7 @@
 
     border: 1px solid var(--white_dark);
     border-radius: 10px;
-    
+
     padding: 10px;
     max-width: 200px;
     width: 100%;
@@ -32,4 +32,13 @@
 .btn-white:hover {
     background-color: var(--white_dark);
     cursor: pointer;
+}
+
+input {
+    background: var(--background);
+    border: 1px solid var(--white_dark);
+    border-radius: 10px;
+
+    width: 100%;
+    padding: 10px;
 }
